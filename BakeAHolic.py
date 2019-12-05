@@ -1,10 +1,10 @@
 from flask import Flask
 from flask import request
 import json
-# from flask_cors import CORS
+from flask_cors import CORS
 
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
 items = {"Bread" : "50",
 		 "Black Forest Cake" : "250"}
